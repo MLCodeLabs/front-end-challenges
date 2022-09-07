@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family:  'Montserrat', sans-serif;
+    }
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+.itemCard {
+
+background-color: hsl(0, 0%, 100%);
+margin: 1.5rem;
+border-radius: 8px;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: centers;
+}
+
+.itemImg {
+width: 100%;
+border-radius: 8px 8px 0 0;
+}
+
+.itemText {
+    padding: 2rem;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+.itemText > * {
+
+    grid-column: span 2;
+}
+
+.cardPrice, .cardMSRP {
+    grid-column: span 1;
+}
+.cardTitle {
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.cardCategory {
+    color:  hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6ch;
+}
+.cardMSRP, .cardText {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height:3ch;
+}
+.cardPrice {
+    color:hsl(158, 36%, 37%);
+    font-size: 2.5rem;
+}
+
+.cardMSRP {
+    text-decoration: line-through;
+    margin-top: 1rem;
+}
+
+.cardCartBtn {
+    border-radius: 14px;
+    background: hsl(158, 36%, 37%);
+   padding: 1.5rem;
+   border: none;
+    margin-top: 0.8rem;
+}
+
+.cardCartBtn a {
+    color:hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.cardPrice, .cardTitle {
+    font-family: 'Fraunces', serif;
+}
+
+
+footer {
+    position: sticky;
+    color: white;
+    padding: 0 3rem ;
+    bottom: 0;
+}
+footer a {
+    color:hsl(33, 10%, 82%)
+}
+
+@media (min-width: 376px) {
+    body {background-color: red;}
+}
